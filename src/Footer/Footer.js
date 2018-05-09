@@ -11,7 +11,7 @@ class Footer extends Component
   render = () => {
     return (
       <footer>
-      <section className="footer"> 
+      <section> 
        <div className="textos">
          <p>Bivaque, Inc.</p>
          <a href="">Carreira</a>
@@ -43,9 +43,10 @@ class Footer extends Component
       <div className="alinhamento">
         <p className="linha" >_________________________________________________________________________________________________________</p>
         <div id="logofooter">
-          <a> <img  src={BvkLogo} alt="logo bivaque"/>  Bivaque, Inc. </a>
+          <a href=""><img  src={BvkLogo} alt="logo bivaque"/>Bivaque, Inc.</a>
         </div>
       </div>
+      
       </footer>
       
     );

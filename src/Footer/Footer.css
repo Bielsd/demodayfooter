@@ -17,6 +17,9 @@ section{
     /* justify-content: center; */
     flex-direction: column; 
 }
+.textos a:hover {
+    color: red;
+}
 
 .textos p{
      margin-bottom: 13px; 
@@ -31,7 +34,7 @@ section{
  }
  
  .logos{display: flex;
-margin: 10px 0px;}
+}
 
  .logos a img{ 
      padding-left: 8px;
@@ -46,13 +49,63 @@ margin: 10px 0px;}
     color: white;
 }
 
- #logofooter{color: white;
+ #logofooter a{color: white;
     font-family: 'Skranji', cursive;
      margin: 0;
- }
+text-decoration: none;
 
-#logofooter img{ 
+ }
+ #logofooter a:hover {
+    color: red;
+}
+
+img{  
      margin-right:10px;   
      width: 30px; 
     height: 30px;
 }
+
+#logofooter a{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #logofooter a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #logofooter:hover a {
+    padding-right: 25px;
+  }
+  
+  #logofooter:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
+  #logofooter :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.logoresponsivo{
+    display: none;
+}
+
+
+  @media screen and (max-width:650px){
+      section{
+          display: none;
+      }
+  }
+   
+  @media screen and (max-width:650px){
+      footer{
+          height: auto;
+      }
+  }
